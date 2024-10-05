@@ -33,13 +33,67 @@ body {
 .title__btn {
     background-color: #374151;
     color: #D1D5DB;
-    padding: 1.2rem;
+    padding: 1rem;
     font-size: 1.2rem;
     border: 1px solid transparent;
     border-radius: 25px;
     width: 180px;
-    margin: 20px;
+    margin: 25px;
     font-weight: bold;
+}
+
+/* Project Demonstration*/
+
+.project__details__content {
+    margin: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 80px;
+}
+
+.project__details__left {
+    background-color: #374151;
+    padding: 2rem;
+    border-radius: 25px 0 0 25px;
+}
+
+.project__details__left img {
+    width: 100%;
+    border-radius: 8px;
+
+}
+
+.project__details__right {
+    background-color: #1F2937;
+    padding: 2rem;
+    color: #fff;
+    border-radius: 0 25px 25px 0;
+}
+
+.project__details__right h3 {
+    margin-bottom: 1rem;
+}
+
+.project__details__right p {
+    line-height: 2;
+    margin-bottom: 1rem;
+}
+
+.techno {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.techno__btn {
+    background-color: #374151;
+    color: #D1D5DB;
+    border: none;
+    border-radius: 25px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-size: 0.9rem;
 }
 
 /* Contact Form Heading */
@@ -64,7 +118,6 @@ body {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-
 }
 
 .contact__item {
@@ -119,7 +172,6 @@ body {
     border: 1px solid #374151;
     background-color: #111827;
     color: #c2cbd4;
-
     border-radius: 8px;
 }
 
@@ -144,24 +196,22 @@ body {
     background-color: #cf7878;
 }
 
-/* Responsive Design for Smaller Screens */
-@media (max-width: 768px) {
-    .contact__info_section {
-        grid-template-columns: 1fr;
-    }
-}
 
 /* Footer Styles */
-.footer {
+.footer,
+.project {
     background-color: #111827;
+    padding: 1rem 0;
+    /* Padding for top and bottom */
 }
 
 .contact__form {
     background-color: #030712;
+    padding: 1rem 0;
 }
 
 .footer__content {
-    padding: 20px;
+    padding: 10px;
     color: #c2cbd4;
     text-align: center;
     font-weight: bold;
@@ -169,4 +219,20 @@ body {
 
 .footer__text {
     margin: auto 0;
+}
+
+
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+
+    .contact__info_section,
+    .project__details__content {
+        grid-template-columns: 1fr;
+    }
+
+    .project__details__left,
+    .project__details__right {
+        border-radius: 0;
+    }
 }
